@@ -1,0 +1,194 @@
+/* Professional Home Page Styling */
+.home-page {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f4f7f6;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .professional-profile {
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    padding: 3rem;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 1rem;
+  }
+  
+  .profile-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .profile-header h2 {
+    color: #7f8c8d;
+    font-size: 1.5rem;
+  }
+  
+  .professional-summary, 
+  .research-expertise, 
+  .academic-journey, 
+  .technical-skills {
+    margin-bottom: 2rem;
+  }
+  
+  /* Section Headings */
+  h3 {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Research Expertise */
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .expertise-item {
+    background-color: #f1f4f8;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .expertise-item h4 {
+    color: #2980b9;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Academic Journey */
+  .degree-section {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .degree {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .degree h4 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+  }
+  
+  .degree-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .date {
+    color: #7f8c8d;
+  }
+  
+  .honor {
+    color: #27ae60;
+    font-weight: bold;
+  }
+  
+  .research-focus {
+    color: #34495e;
+    font-style: italic;
+  }
+  
+  /* Technical Skills */
+  .skills-categories {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .skill-category {
+    flex: 1;
+    background-color: #f1f4f8;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  
+  .skill-category h4 {
+    color: #2980b9;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #2980b9;
+    padding-bottom: 0.5rem;
+  }
+  
+  .skill-category ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skill-category li {
+    margin-bottom: 0.5rem;
+    color: #34495e;
+    position: relative;
+    padding-left: 1.2rem;
+  }
+  
+  .skill-category li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3498db;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ecf0f1;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+    color: #7f8c8d;
+  }
+  
+  .social-links a {
+    margin-left: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #2980b9;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .professional-profile {
+      padding: 1.5rem;
+    }
+  
+    .expertise-grid,
+    .degree-section,
+    .skills-categories {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+  
+    .cta-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .social-links {
+      margin-top: 1rem;
+    }
+  }
